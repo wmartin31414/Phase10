@@ -4,7 +4,7 @@
 //V2 allow user to enter number of players and what phase each one is at along with score keeper 
 //thoughts about having general game night score keeper app?
 
-//Defining Variables
+//Defining Variables and functions
 let goal_options = ["Run of 3", "Run of 4", "Run of 5", "Run of 6", "Run of Same Color 3", "Run of Same Color 4", "Run of Same Color 5",
     "Same Color 4", "Same Color 5", "Same Color 6", "Same Color 7", "Same Number 3", "Same Number 4",
     "Even Numbers 3", "Even Numbers 4", "Even Numbers 5", "Even Numbers 6", "Even Numbers 7", "Even Numbers 8",
@@ -22,7 +22,7 @@ function get_ran_num(min, max) {
     return ran_num;
 }
 
-function get_num_of_phase() {
+function get_num_of_phase() { //this function uses the random number generator 
     get_ran_num(1, num_of_phase_options.length);
     num_of_phase = ran_num;
     console.log("the number of phases for this game of Phase 10 will be " + num_of_phase);
